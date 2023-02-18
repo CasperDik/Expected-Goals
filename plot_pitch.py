@@ -21,5 +21,5 @@ for _, row in subset.iterrows():
     else:
         pitch.arrows(xstart=row["x"], ystart=row["y"], xend=center_goal[0], yend=center_goal[1], ax=ax, width=(0.3 + row["XG"]*4), color="black")
 
+plt.savefig("shots.png")
 plt.show()
-
